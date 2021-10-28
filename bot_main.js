@@ -23,7 +23,7 @@ const replyFunction = async(event) => {
 
     let pushText = '';
     try{
-      const res = await axios.get('https://weather.tsukumijima.net/api/forecast/city/170010');
+      const res = await axios.get('https://weather.tsukumijima.net/api/forecast/city/170010'); // 現在金沢市の気象データを取得している
 
       const today_weather = res.data.forecasts[0].telop;
 
