@@ -17,3 +17,16 @@
 ## 環境
 - Node.js 16.13.0
 - ngrok 2.3.40
+
+## 使用方法
+1. [LINE Developers](https://developers.line.biz/)で新規チャネルを作成
+2. bot_main.jsのconfigオブジェクトにあるchannelSecretにチャネルシークレットを、channelAccessTokenにはチャネルアクセストークンを設定する
+3. WebhooksURLの設定する。ローカルでサーバーを用意する場合はコマンドラインに以下のように入力する。
+```
+ngrok http 3000
+```
+4. ngrokの画面からForwardingの項目のhttpsから始まるURLをチャネルのWebhookのURL欄に貼り付ける。
+5. 以下のコマンドでローカルサーバーを立ち上げる
+```
+node bot_main.js
+```
