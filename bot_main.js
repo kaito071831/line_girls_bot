@@ -7,8 +7,8 @@ const axios = require('axios');
 const PORT = process.env.PORT || 3000;
 
 const config = {
-  channelSecret: '4387e8c02a994a3882ab0f72a01b2896',
-  channelAccessToken: 'G78JQVBtI43qmAB0orBt1mkf141eN1Ls7F4l9NS6/GvhLd6cwh3livaDpIzRkuPRnjQ/mUxEhAfwriXMsphUYguIsUIrDoo7JJPom7hR2eUrTuOYou13/+PbZMoE7hjmQSfUtUfkjOx7XZDl1bMHEAdB04t89/1O/w1cDnyilFU='
+  channelSecret: 'xxxx',
+  channelAccessToken: 'xxxx'
 };
 
 const replyFunction = async(event) => {
